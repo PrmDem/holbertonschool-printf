@@ -1,0 +1,22 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+#include <stdarg.h>
+#include <unistd.h>
+
+typedef struct type 
+{
+	char *str;
+	int (*f)(va_list arg);
+} template;
+
+int _printf(const char *format, ...);
+int _strlen(char *s);
+int print_char(va_list arg);
+int print_string(va_list arg);
+int print_decimal(va_list arg);
+int print_integer(va_list arg);
+int get_type(va_list arg);
+
+#endif
