@@ -4,6 +4,11 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
+/**
+*struct type - the type of the char
+*@str: the char
+*@f: the function to use for the good type
+*/
 
 typedef struct type 
 {
@@ -15,6 +20,7 @@ int _printf(const char *format, ...);
 int _strlen(char *s);
 int print_char(va_list arg);
 int print_string(va_list arg);
+int print_percent(va_list arg);
 int print_decimal(va_list arg);
 int print_integer(va_list arg);
 int get_type(va_list arg);
