@@ -5,6 +5,12 @@
 #include <stdarg.h>
 #include <unistd.h>
 
+/**
+*struct type - the type of the char
+*@str: the char
+*@f: the function to use for the good type
+*/
+
 typedef struct type 
 {
 	char *str;
