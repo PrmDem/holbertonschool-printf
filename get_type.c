@@ -18,14 +18,14 @@ int get_type(char *format, va_list arg)
 		{"s", print_string},
 		{"i", print_integer},
 		{"d", print_decimal},
-		{"%", print_percent},
+		{'%', print_percent},
 		{NULL, NULL}
 	};
 
 	while (types[index].str != NULL)
 	{
 		if (*format == *(types[index].str))
-			return (types[index].f);
+			return (types[index].f(arg));
 
 		index++;
 	}
