@@ -37,8 +37,10 @@ int print_string(va_list arg)
 
 int print_percent(va_list arg)
 {
-	char c = va_arg(arg, int);
-	
+	(void)arg;
+	char c;
+
 	c = '%';
-	return (write(1, &c, 1);
+
+	return (write(1, &c, 1));
 }
