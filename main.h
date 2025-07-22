@@ -22,6 +22,6 @@ int _strlen(char *s);
 int print_char(va_list arg);
 int print_string(va_list arg);
 int print_percent(va_list arg);
-int get_type(char *format, va_list arg);
+int get_type(const char *format, va_list arg);
 
 #endif
