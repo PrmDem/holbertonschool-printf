@@ -1,0 +1,41 @@
+.TH man 7 "23 July 2025" "1.0" "_printf man page"
+.SH NAME
+_printf - prints input according to a format
+.SH SYNOPSIS
+#include "main.h"
+\fBint _printf(const char *\fR\fIformat\fR\fB, ...);\fR
+.SH DESCRIPTION
+\fB_printf\fR prints character string \fIformat\fR to standard output,
+.SS Formatting
+\fB_printf\fR outputs the characters to output stream stdout without operating any changes.
+Upon encountering the special character %,
+fetches the provided \fIarguments\fR
+and converts them according to the \fIconversion specifier\fR
+that follows %.
+.SS Conversion specifiers
+.TP
+\fBc\fR
+\fIargument\fR is converted to an unsigned char
+.TP
+\fBs\fR
+\fIargument\fR is taken as a pointer to an array of characters (string),
+which will be output up to the terminating null byte.
+The null byte itself will be excluded.
+.TP
+\fBi, d\fR
+\fIargument\fR is converted to a signed decimal.
+.SH RETURN VALUE
+Returns the number of characters written as an integer.
+.SH EXAMPLES
+To print a simple \fIHello, world!\fR string without a conversion specifier:
+.IP
+ #include "main.h"
+ _printf("Hello, world!");
+\fR 
+.P
+To print positive or negative integers:
+.IP
+ #include "main.h"
+ _printf("The absolute of %d is %i", -56, 56);
+.SH AUTHORS
+Mustapha Chermat, Priam Demailly
