@@ -17,6 +17,8 @@ int get_type(const char *format, va_list arg)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_percent},
+		{"i", print_int},
+		{"d", print_int},
 		{NULL, NULL}
 	};
 
@@ -28,5 +30,5 @@ int get_type(const char *format, va_list arg)
 		index++;
 	}
 
-	return (0);
+	return (write(1, &format[0], 1));
 }
