@@ -30,6 +30,5 @@ int get_type(const char *format, va_list arg)
 		index++;
 	}
 
-	write(1, "%", 1);
-	return (write(1, &format[0], 1));
+	return (write(1, "%", 1) + write(1, &format[0], 1));
 }
