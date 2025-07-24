@@ -27,7 +27,7 @@ int main(void)
 	printf("Unknown:[%r]\n");
 	_printf("More unknow [%r%r%r]\n");
 	printf("More unknow [%r%r%r]\n");
-	_printf("More than max_int : %d\n", 2344231123456789123);
-	printf("More than max_int : %d\n", 2344231123456789123);
+	_printf("Min_int : %d\n", -2147483648);
+	printf("Min_int : %d\n", -2147483648);
 	return (0);
 }
