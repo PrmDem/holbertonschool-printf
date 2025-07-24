@@ -24,7 +24,7 @@ int print_string(va_list arg)
 	char *str = va_arg(arg, char *);
 
 	if (str == NULL)
-		write(1,"(null)", 6);
+		str = "(null)";
 
 	return (write(1, str, _strlen(str)));
 }
