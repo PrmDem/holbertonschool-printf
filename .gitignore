@@ -1,5 +1,5 @@
 .vscode/
 test/main.c
-a.out
-main.h.gch
-test/
+.test/
+testcomp
+main.c
