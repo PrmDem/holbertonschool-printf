@@ -54,7 +54,7 @@ int print_percent(va_list arg)
 
 int print_int(va_list arg)
 {
-	int n;
+	long int n;
 	int i = 0, count = 0;
 	char buffer[12];
 
