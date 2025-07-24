@@ -31,4 +31,4 @@ The man page, once compiled with gzip and added to the usr/share/man/man3 direct
 `man ./man_3_printf`<br/>
 
 ### Flowchart
-![Flowchart explaining how our _printf function works, step by step](https://i.ibb.co/kVMFz3yd/printf-Holberton-drawio.png)
+![Flowchart explaining how our _printf function works, step by step](https://i.ibb.co/S74rgH5G/printf-Holberton-1.jpg)
