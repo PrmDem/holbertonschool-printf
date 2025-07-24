@@ -37,5 +37,9 @@ To print positive or negative integers:
 .IP
  #include "main.h"
  _printf("The absolute of %d is %i", -56, 56);
+.SH KNOWN BUGS
+Contrary to standard library \fIprintf\fR,
+when given \fB"%"\fR followed by a new line as its \fIconst *char\fR,
+our version prints a lone % character where standard library's \fIprintf\fR prints nothing.
 .SH AUTHORS
 Mustapha Chermat, Priam Demailly
