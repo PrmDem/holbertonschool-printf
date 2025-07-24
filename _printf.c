@@ -12,9 +12,13 @@ int _printf(const char *format, ...)
 	va_list arg;
 	int count = 0;
 
-	va_start(arg, format);
+	if (format == NULL)
+		return (-1);
 
-	for (i = 0; format[i] != '\0'; i++)
+	va_start(arg, format);
+	i = 0;
+
+	while (format[i] != '\0')
 	{
 		if (format[i] == '%')
 		{
@@ -22,11 +26,11 @@ int _printf(const char *format, ...)
 			i += 2;
 		}
 
-		if (format[i] == '%')
+		else
 		{
-			i += 1;
+			count += write(1, &format[i], 1);
+			i++;
 		}
-		count += write(1, &format[i], 1);
 	}
 
 	va_end(arg);
