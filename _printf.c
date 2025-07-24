@@ -21,6 +21,11 @@ int _printf(const char *format, ...)
 			count += (get_type(&format[i + 1], arg));
 			i += 2;
 		}
+
+		if (format[i] == '%')
+		{
+			i += 1;
+		}
 		count += write(1, &format[i], 1);
 	}
 
