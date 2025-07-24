@@ -25,7 +25,7 @@ The null byte itself will be excluded.
 \fBi, d\fR
 \fIargument\fR is converted to a signed decimal.
 .SH RETURN VALUE
-Returns the number of characters written as an integer.
+Returns the number of characters written as an integer, or -1 on input error.
 .SH EXAMPLES
 To print a simple \fIHello, world!\fR string without a conversion specifier:
 .IP
