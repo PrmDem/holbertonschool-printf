@@ -26,5 +26,6 @@ int get_type(const char *format, va_list arg);
 int print_int(va_list arg);
 int print_hexa(va_list arg);
 int print_hexa_low(va_list arg);
+int print_bin(va_list arg);
 
 #endif
