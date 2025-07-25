@@ -12,7 +12,7 @@ int print_bin(va_list arg)
 	int i = 0, count = 0;
 	char buffer[64];
 
-	n = va_arg(arg, int);
+	n = va_arg(arg, unsigned int);
 
 	if (n == 0)
 		count += write(1, "0", 1);
