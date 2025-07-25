@@ -31,7 +31,7 @@ The man page, once compiled with gzip and added to the usr/share/man/man3 direct
 `man ./man_3_printf`<br/>
 
 ### Flowchart
-![Flowchart explaining how our _printf function works, step by step](./images/Hbtn%20_printf%20flowchart.jpg)
+![Flowchart explaining how our _printf function works, step by step](./images/Hbtn_flowchartv2.jpg)
 
 ## Uses and tests
 Beyond the straightforward uses such as a simple string, a small integer, or any regular mixes of the two (e.g. `My dog's name is %s and she's %i years old`), we wanted to test more unexpected cases so that our four main specifiers would work as well as possible.<br/>
