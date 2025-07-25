@@ -23,6 +23,7 @@ int get_type(const char *format, va_list arg)
 		{"x", print_hexa_low},
 		{"o", print_octal},
 		{"u", print_unsigned},
+		{"b", print_bin},
 		{NULL, NULL}
 	};
 
