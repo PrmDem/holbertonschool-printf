@@ -7,8 +7,8 @@
 */
 
 int print_bin(va_list arg)
-{
-	long unsigned int n;
+{	
+	long long unsigned int n;
 	int i = 0, count = 0;
 	char buffer[12];
 
