@@ -2,8 +2,8 @@
 
 /**
 *_strlen - calculate the size of a string
-*@s: the string
-*Return: the size of the string
+*@s: string to get size of
+*Return: the size of the string as an int
 */
 
 int _strlen(char *s)
