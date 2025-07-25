@@ -22,6 +22,9 @@ int get_type(const char *format, va_list arg)
 		{NULL, NULL}
 	};
 
+	if (format == NULL)
+		return (-1);
+
 	while (types[index].str != NULL)
 	{
 		if (*format == *(types[index].str))
@@ -29,6 +32,6 @@ int get_type(const char *format, va_list arg)
 
 		index++;
 	}
-
+	
 	return (write(1, "%", 1) + write(1, &format[0], 1));
 }
