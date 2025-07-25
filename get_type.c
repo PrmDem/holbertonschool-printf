@@ -21,6 +21,8 @@ int get_type(const char *format, va_list arg)
 		{"d", print_int},
 		{"X", print_hexa},
 		{"x", print_hexa_low},
+		{"o", print_octal},
+		{"u", print_unsigned},
 		{NULL, NULL}
 	};
 
@@ -34,6 +36,6 @@ int get_type(const char *format, va_list arg)
 
 		index++;
 	}
-	
+
 	return (write(1, "%", 1) + write(1, &format[0], 1));
 }
