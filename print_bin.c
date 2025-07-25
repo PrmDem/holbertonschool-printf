@@ -7,10 +7,10 @@
 */
 
 int print_bin(va_list arg)
-{	
-	long long unsigned int n;
+{
+	unsigned long int n;
 	int i = 0, count = 0;
-	char buffer[12];
+	char buffer[258];
 
 	n = va_arg(arg, int);
 
