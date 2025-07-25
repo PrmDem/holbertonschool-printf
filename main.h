@@ -6,9 +6,9 @@
 #include <unistd.h>
 
 /**
-*struct type - the type of the char
-*@str: the char
-*@f: the function to use for the good type
+*struct type - type associated to char
+*@str: the char provided after %
+*@f: the appropriate function to redirect to
 */
 
 typedef struct type
