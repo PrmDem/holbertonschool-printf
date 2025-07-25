@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-*print_char - print a character
-*@arg: the character
-*Return: the write of char
+*print_char - prints a character
+*@arg: the char given as an argument
+*Return: the number of chars printed by 'write'
 */
 
 int print_char(va_list arg)
@@ -14,9 +14,9 @@ int print_char(va_list arg)
 }
 
 /**
-*print_string - print a string
-*@arg: the string
-*Return: the write of the string
+*print_string - prints a string of characters
+*@arg: the string given as an argument
+*Return: the number of chars printed by 'write'
 */
 
 int print_string(va_list arg)
@@ -30,9 +30,9 @@ int print_string(va_list arg)
 }
 
 /**
-*print_percent - print %
+*print_percent - prints special character %
 *@arg: the char %
-*Return: write %
+*Return: the number of chars printed by 'write'
 */
 
 int print_percent(va_list arg)
@@ -47,9 +47,9 @@ int print_percent(va_list arg)
 }
 
 /**
-*print_int - print an  interger
-*@arg: the integer
-*Return: write int
+*print_int - prints an interger
+*@arg: the integer given as an argument
+*Return: the amount of chars printed by 'write'
 */
 
 int print_int(va_list arg)
