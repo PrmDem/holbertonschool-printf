@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-*_printf - print everything
-*@format: the format to print
-*Return: the write of the string
+*_printf - prints input to standard output stream
+* according to a format
+*@format: the string to print
+*Return: number of chars printed by 'write' function
 */
 
 int _printf(const char *format, ...)
