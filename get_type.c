@@ -21,6 +21,7 @@ int get_type(const char *format, va_list arg)
 		{"d", print_int},
 		{"X", print_hexa},
 		{"x", print_hexa_low},
+		{"b", print_bin},
 		{NULL, NULL}
 	};
 
